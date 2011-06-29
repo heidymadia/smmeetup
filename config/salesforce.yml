@@ -1,0 +1,15 @@
+common: &common 
+  adapter: activesalesforce
+  url: https://www.salesforce.com
+  username: admins@saasten.com
+  password: admin2011
+  api_version: 20.0
+  
+development:
+  <<: *common
+  
+production:
+  <<: *common
+  
+salesforce-default-realm:
+  <<: *common
