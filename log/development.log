@@ -50,3 +50,221 @@ Created new connection for ['https://www.salesforce.com/services/Soap/u/20.0', '
    Created one-to-many relationship 'process_instances' from Salesforce::Account to Salesforce::ProcessInstance using target_object_id
    Created one-to-many relationship 'tasks' from Salesforce::Account to Salesforce::Task using what_id
    Created one-to-many relationship 'user_profile_feeds' from Salesforce::Account to Salesforce::UserProfileFeed using parent_id
+
+Using ActiveSalesforce connection
+Establishing new connection for ['https://www.salesforce.com/services/Soap/u/20.0', 'admins@saasten.com, ''
+Created new connection for ['https://www.salesforce.com/services/Soap/u/20.0', 'admins@saasten.com', ''] in 6.609375 seconds
+   Created one-to-one relationship 'master_record' from Salesforce::Account to Salesforce::Account using master_record_id
+   Created one-to-one relationship 'parent' from Salesforce::Account to Salesforce::Account using parent_id
+   Created one-to-one relationship 'owner' from Salesforce::Account to Salesforce::User using owner_id
+   Created one-to-one relationship 'created_by' from Salesforce::Account to Salesforce::User using created_by_id
+   Created one-to-one relationship 'last_modified_by' from Salesforce::Account to Salesforce::User using last_modified_by_id
+   Creating ActiveRecord stub for the referenced entity 'AccountContactRole'
+   Created one-to-many relationship 'account_contact_roles' from Salesforce::Account to Salesforce::AccountContactRole using account_id
+   Created one-to-many relationship 'feeds' from Salesforce::Account to Salesforce::AccountFeed using parent_id
+   Creating ActiveRecord stub for the referenced entity 'AccountHistory'
+   Created one-to-many relationship 'histories' from Salesforce::Account to Salesforce::AccountHistory using account_id
+   Creating ActiveRecord stub for the referenced entity 'AccountPartner'
+   Created one-to-many relationship 'account_partners_from' from Salesforce::Account to Salesforce::AccountPartner using account_from_id
+   Created one-to-many relationship 'account_partners_to' from Salesforce::Account to Salesforce::AccountPartner using account_to_id
+   Creating ActiveRecord stub for the referenced entity 'AccountShare'
+   Created one-to-many relationship 'shares' from Salesforce::Account to Salesforce::AccountShare using account_id
+   Creating ActiveRecord stub for the referenced entity 'AccountTeamMember'
+   Created one-to-many relationship 'account_team_members' from Salesforce::Account to Salesforce::AccountTeamMember using account_id
+   Creating ActiveRecord stub for the referenced entity 'ActivityHistory'
+   Created one-to-many relationship 'activity_histories' from Salesforce::Account to Salesforce::ActivityHistory using account_id
+   Created one-to-many relationship 'contacts' from Salesforce::Account to Salesforce::Contact using account_id
+   Created one-to-many relationship 'contracts' from Salesforce::Account to Salesforce::Contract using account_id
+   Created one-to-many relationship 'feed_subscriptions_for_entity' from Salesforce::Account to Salesforce::EntitySubscription using parent_id
+   Creating ActiveRecord stub for the referenced entity 'Event'
+   Created one-to-many relationship 'events' from Salesforce::Account to Salesforce::Event using what_id
+   Created one-to-many relationship 'news_feeds' from Salesforce::Account to Salesforce::NewsFeed using parent_id
+   Creating ActiveRecord stub for the referenced entity 'Note'
+   Created one-to-many relationship 'notes' from Salesforce::Account to Salesforce::Note using parent_id
+   Creating ActiveRecord stub for the referenced entity 'NoteAndAttachment'
+   Created one-to-many relationship 'notes_and_attachments' from Salesforce::Account to Salesforce::NoteAndAttachment using parent_id
+   Creating ActiveRecord stub for the referenced entity 'OpenActivity'
+   Created one-to-many relationship 'open_activities' from Salesforce::Account to Salesforce::OpenActivity using account_id
+   Creating ActiveRecord stub for the referenced entity 'OpportunityPartner'
+   Created one-to-many relationship 'opportunity_partners_to' from Salesforce::Account to Salesforce::OpportunityPartner using account_to_id
+   Creating ActiveRecord stub for the referenced entity 'Partner'
+   Created one-to-many relationship 'partners_from' from Salesforce::Account to Salesforce::Partner using account_from_id
+   Created one-to-many relationship 'partners_to' from Salesforce::Account to Salesforce::Partner using account_to_id
+   Creating ActiveRecord stub for the referenced entity 'ProcessInstance'
+   Created one-to-many relationship 'process_instances' from Salesforce::Account to Salesforce::ProcessInstance using target_object_id
+   Created one-to-many relationship 'tasks' from Salesforce::Account to Salesforce::Task using what_id
+   Created one-to-many relationship 'user_profile_feeds' from Salesforce::Account to Salesforce::UserProfileFeed using parent_id
+   Created one-to-one relationship 'master_record' from Salesforce::Contact to Salesforce::Contact using master_record_id
+   Created one-to-one relationship 'account' from Salesforce::Contact to Salesforce::Account using account_id
+   Created one-to-one relationship 'reports_to' from Salesforce::Contact to Salesforce::Contact using reports_to_id
+   Created one-to-one relationship 'owner' from Salesforce::Contact to Salesforce::User using owner_id
+   Created one-to-one relationship 'created_by' from Salesforce::Contact to Salesforce::User using created_by_id
+   Created one-to-one relationship 'last_modified_by' from Salesforce::Contact to Salesforce::User using last_modified_by_id
+   Created one-to-many relationship 'account_contact_roles' from Salesforce::Contact to Salesforce::AccountContactRole using contact_id
+   Created one-to-many relationship 'activity_histories' from Salesforce::Contact to Salesforce::ActivityHistory using who_id
+   Creating ActiveRecord stub for the referenced entity 'CampaignMember'
+   Created one-to-many relationship 'campaign_members' from Salesforce::Contact to Salesforce::CampaignMember using contact_id
+   Creating ActiveRecord stub for the referenced entity 'CaseContactRole'
+   Created one-to-many relationship 'case_contact_roles' from Salesforce::Contact to Salesforce::CaseContactRole using contact_id
+   Created one-to-many relationship 'case_team_members' from Salesforce::Contact to Salesforce::CaseTeamMember using member_id
+   Creating ActiveRecord stub for the referenced entity 'CaseTeamTemplateMember'
+   Created one-to-many relationship 'case_team_template_members' from Salesforce::Contact to Salesforce::CaseTeamTemplateMember using member_id
+   Created one-to-many relationship 'feeds' from Salesforce::Contact to Salesforce::ContactFeed using parent_id
+   Creating ActiveRecord stub for the referenced entity 'ContactHistory'
+   Created one-to-many relationship 'histories' from Salesforce::Contact to Salesforce::ContactHistory using contact_id
+   Creating ActiveRecord stub for the referenced entity 'ContactShare'
+   Created one-to-many relationship 'shares' from Salesforce::Contact to Salesforce::ContactShare using contact_id
+   Creating ActiveRecord stub for the referenced entity 'ContractContactRole'
+   Created one-to-many relationship 'contract_contact_roles' from Salesforce::Contact to Salesforce::ContractContactRole using contact_id
+   Creating ActiveRecord stub for the referenced entity 'EmailStatus'
+   Created one-to-many relationship 'email_statuses' from Salesforce::Contact to Salesforce::EmailStatus using who_id
+   Created one-to-many relationship 'feed_subscriptions_for_entity' from Salesforce::Contact to Salesforce::EntitySubscription using parent_id
+   Created one-to-many relationship 'events' from Salesforce::Contact to Salesforce::Event using who_id
+   Creating ActiveRecord stub for the referenced entity 'EventAttendee'
+   Created one-to-many relationship 'event_attendees' from Salesforce::Contact to Salesforce::EventAttendee using attendee_id
+   Created one-to-many relationship 'news_feeds' from Salesforce::Contact to Salesforce::NewsFeed using parent_id
+   Created one-to-many relationship 'notes' from Salesforce::Contact to Salesforce::Note using parent_id
+   Created one-to-many relationship 'notes_and_attachments' from Salesforce::Contact to Salesforce::NoteAndAttachment using parent_id
+   Created one-to-many relationship 'open_activities' from Salesforce::Contact to Salesforce::OpenActivity using who_id
+   Creating ActiveRecord stub for the referenced entity 'OpportunityContactRole'
+   Created one-to-many relationship 'opportunity_contact_roles' from Salesforce::Contact to Salesforce::OpportunityContactRole using contact_id
+   Created one-to-many relationship 'process_instances' from Salesforce::Contact to Salesforce::ProcessInstance using target_object_id
+   Created one-to-many relationship 'tasks' from Salesforce::Contact to Salesforce::Task using who_id
+   Created one-to-many relationship 'user_profile_feeds' from Salesforce::Contact to Salesforce::UserProfileFeed using parent_id
+
+Using ActiveSalesforce connection
+Establishing new connection for ['https://www.salesforce.com/services/Soap/u/20.0', 'admins@saasten.com, ''
+Created new connection for ['https://www.salesforce.com/services/Soap/u/20.0', 'admins@saasten.com', ''] in 8.531249761581421 seconds
+   Created one-to-one relationship 'master_record' from Salesforce::Account to Salesforce::Account using master_record_id
+   Created one-to-one relationship 'parent' from Salesforce::Account to Salesforce::Account using parent_id
+   Created one-to-one relationship 'owner' from Salesforce::Account to Salesforce::User using owner_id
+   Created one-to-one relationship 'created_by' from Salesforce::Account to Salesforce::User using created_by_id
+   Created one-to-one relationship 'last_modified_by' from Salesforce::Account to Salesforce::User using last_modified_by_id
+   Creating ActiveRecord stub for the referenced entity 'AccountContactRole'
+   Created one-to-many relationship 'account_contact_roles' from Salesforce::Account to Salesforce::AccountContactRole using account_id
+   Created one-to-many relationship 'feeds' from Salesforce::Account to Salesforce::AccountFeed using parent_id
+   Creating ActiveRecord stub for the referenced entity 'AccountHistory'
+   Created one-to-many relationship 'histories' from Salesforce::Account to Salesforce::AccountHistory using account_id
+   Creating ActiveRecord stub for the referenced entity 'AccountPartner'
+   Created one-to-many relationship 'account_partners_from' from Salesforce::Account to Salesforce::AccountPartner using account_from_id
+   Created one-to-many relationship 'account_partners_to' from Salesforce::Account to Salesforce::AccountPartner using account_to_id
+   Creating ActiveRecord stub for the referenced entity 'AccountShare'
+   Created one-to-many relationship 'shares' from Salesforce::Account to Salesforce::AccountShare using account_id
+   Creating ActiveRecord stub for the referenced entity 'AccountTeamMember'
+   Created one-to-many relationship 'account_team_members' from Salesforce::Account to Salesforce::AccountTeamMember using account_id
+   Creating ActiveRecord stub for the referenced entity 'ActivityHistory'
+   Created one-to-many relationship 'activity_histories' from Salesforce::Account to Salesforce::ActivityHistory using account_id
+   Created one-to-many relationship 'contacts' from Salesforce::Account to Salesforce::Contact using account_id
+   Created one-to-many relationship 'contracts' from Salesforce::Account to Salesforce::Contract using account_id
+   Created one-to-many relationship 'feed_subscriptions_for_entity' from Salesforce::Account to Salesforce::EntitySubscription using parent_id
+   Creating ActiveRecord stub for the referenced entity 'Event'
+   Created one-to-many relationship 'events' from Salesforce::Account to Salesforce::Event using what_id
+   Created one-to-many relationship 'news_feeds' from Salesforce::Account to Salesforce::NewsFeed using parent_id
+   Creating ActiveRecord stub for the referenced entity 'Note'
+   Created one-to-many relationship 'notes' from Salesforce::Account to Salesforce::Note using parent_id
+   Creating ActiveRecord stub for the referenced entity 'NoteAndAttachment'
+   Created one-to-many relationship 'notes_and_attachments' from Salesforce::Account to Salesforce::NoteAndAttachment using parent_id
+   Creating ActiveRecord stub for the referenced entity 'OpenActivity'
+   Created one-to-many relationship 'open_activities' from Salesforce::Account to Salesforce::OpenActivity using account_id
+   Creating ActiveRecord stub for the referenced entity 'OpportunityPartner'
+   Created one-to-many relationship 'opportunity_partners_to' from Salesforce::Account to Salesforce::OpportunityPartner using account_to_id
+   Creating ActiveRecord stub for the referenced entity 'Partner'
+   Created one-to-many relationship 'partners_from' from Salesforce::Account to Salesforce::Partner using account_from_id
+   Created one-to-many relationship 'partners_to' from Salesforce::Account to Salesforce::Partner using account_to_id
+   Creating ActiveRecord stub for the referenced entity 'ProcessInstance'
+   Created one-to-many relationship 'process_instances' from Salesforce::Account to Salesforce::ProcessInstance using target_object_id
+   Created one-to-many relationship 'tasks' from Salesforce::Account to Salesforce::Task using what_id
+   Created one-to-many relationship 'user_profile_feeds' from Salesforce::Account to Salesforce::UserProfileFeed using parent_id
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-06-29 16:04:00) [GET]
+
+ActionController::RoutingError (No route matches "/Salesforce/" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  c:/Program Files/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Program Files/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Program Files/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-06-29 16:04:37) [GET]
+
+ActionController::RoutingError (No route matches "/Salesforce/account" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  c:/Program Files/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  c:/Program Files/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  c:/Program Files/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing Salesforce::AccountsController#index (for 127.0.0.1 at 2011-06-29 16:07:15) [GET]
+
+Using ActiveSalesforce connection
+Establishing new connection for ['https://www.salesforce.com/services/Soap/u/20.0', 'admins@saasten.com, ''
+Created new connection for ['https://www.salesforce.com/services/Soap/u/20.0', 'admins@saasten.com', ''] in 10.34375 seconds
+   Created one-to-one relationship 'master_record' from Salesforce::Account to Salesforce::Account using master_record_id
+   Created one-to-one relationship 'parent' from Salesforce::Account to Salesforce::Account using parent_id
+   Created one-to-one relationship 'owner' from Salesforce::Account to Salesforce::User using owner_id
+   Created one-to-one relationship 'created_by' from Salesforce::Account to Salesforce::User using created_by_id
+   Created one-to-one relationship 'last_modified_by' from Salesforce::Account to Salesforce::User using last_modified_by_id
+   Creating ActiveRecord stub for the referenced entity 'AccountContactRole'
+   Created one-to-many relationship 'account_contact_roles' from Salesforce::Account to Salesforce::AccountContactRole using account_id
+   Created one-to-many relationship 'feeds' from Salesforce::Account to Salesforce::AccountFeed using parent_id
+   Creating ActiveRecord stub for the referenced entity 'AccountHistory'
+   Created one-to-many relationship 'histories' from Salesforce::Account to Salesforce::AccountHistory using account_id
+   Creating ActiveRecord stub for the referenced entity 'AccountPartner'
+   Created one-to-many relationship 'account_partners_from' from Salesforce::Account to Salesforce::AccountPartner using account_from_id
+   Created one-to-many relationship 'account_partners_to' from Salesforce::Account to Salesforce::AccountPartner using account_to_id
+   Creating ActiveRecord stub for the referenced entity 'AccountShare'
+   Created one-to-many relationship 'shares' from Salesforce::Account to Salesforce::AccountShare using account_id
+   Creating ActiveRecord stub for the referenced entity 'AccountTeamMember'
+   Created one-to-many relationship 'account_team_members' from Salesforce::Account to Salesforce::AccountTeamMember using account_id
+   Creating ActiveRecord stub for the referenced entity 'ActivityHistory'
+   Created one-to-many relationship 'activity_histories' from Salesforce::Account to Salesforce::ActivityHistory using account_id
+   Created one-to-many relationship 'contacts' from Salesforce::Account to Salesforce::Contact using account_id
+   Created one-to-many relationship 'contracts' from Salesforce::Account to Salesforce::Contract using account_id
+   Created one-to-many relationship 'feed_subscriptions_for_entity' from Salesforce::Account to Salesforce::EntitySubscription using parent_id
+   Creating ActiveRecord stub for the referenced entity 'Event'
+   Created one-to-many relationship 'events' from Salesforce::Account to Salesforce::Event using what_id
+   Created one-to-many relationship 'news_feeds' from Salesforce::Account to Salesforce::NewsFeed using parent_id
+   Creating ActiveRecord stub for the referenced entity 'Note'
+   Created one-to-many relationship 'notes' from Salesforce::Account to Salesforce::Note using parent_id
+   Creating ActiveRecord stub for the referenced entity 'NoteAndAttachment'
+   Created one-to-many relationship 'notes_and_attachments' from Salesforce::Account to Salesforce::NoteAndAttachment using parent_id
+   Creating ActiveRecord stub for the referenced entity 'OpenActivity'
+   Created one-to-many relationship 'open_activities' from Salesforce::Account to Salesforce::OpenActivity using account_id
+   Creating ActiveRecord stub for the referenced entity 'OpportunityPartner'
+   Created one-to-many relationship 'opportunity_partners_to' from Salesforce::Account to Salesforce::OpportunityPartner using account_to_id
+   Creating ActiveRecord stub for the referenced entity 'Partner'
+   Created one-to-many relationship 'partners_from' from Salesforce::Account to Salesforce::Partner using account_from_id
+   Created one-to-many relationship 'partners_to' from Salesforce::Account to Salesforce::Partner using account_to_id
+   Creating ActiveRecord stub for the referenced entity 'ProcessInstance'
+   Created one-to-many relationship 'process_instances' from Salesforce::Account to Salesforce::ProcessInstance using target_object_id
+   Created one-to-many relationship 'tasks' from Salesforce::Account to Salesforce::Task using what_id
+   Created one-to-many relationship 'user_profile_feeds' from Salesforce::Account to Salesforce::UserProfileFeed using parent_id
+Rendering template within layouts/salesforce/accounts
+Rendering salesforce/accounts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/salesforce/accounts/index.html.erb:
+8:     <th>Description</th>
+9:   </tr>
+10: 
+11: <% @accounts.each do |account| %>
+12:   <tr>
+13:     <td><%=h account.name %></td>
+14:     <td><%=h account.phone %></td>
+
+    app/views/salesforce/accounts/index.html.erb:11
+    app/controllers/salesforce/accounts_controller.rb:7:in `index'
+    <internal:prelude>:10:in `synchronize'
+    c:/Program Files/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    c:/Program Files/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    c:/Program Files/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (internal_server_error)
