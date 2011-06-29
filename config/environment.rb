@@ -40,5 +40,5 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
   
   config.gem "asf-soap-adapter", :lib => 'asf-soap-adapter'
-  config.database_configuration_file = File.join(RAILS_ROOT, config, 'salesforce.yml')
+  #config.database_configuration_file = File.join(RAILS_ROOT, config, 'salesforce.yml')
 end
