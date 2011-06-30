@@ -1,7 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :accounts
+  map.resources :contacts
 
-  map.resources :accounts
+  
+  
+  map.namespace :salesforce do |salesforce|
+    salesforce.resources :accounts
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
 
