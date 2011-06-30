@@ -1,0 +1,32 @@
+<h1>Listing assignments</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Start date  c</th>
+    <th>End date  c</th>
+    <th>Description  c</th>
+    <th>Role  c</th>
+    <th>Currently assigned  c</th>
+    <th>Status  c</th>
+  </tr>
+
+<% @salesforce_assignments.each do |assignment| %>
+  <tr>
+    <td><%=h assignment.name %></td>
+    <td><%=h assignment.start_date__c %></td>
+    <td><%=h assignment.end_date__c %></td>
+    <td><%=h assignment.description__c %></td>
+    <td><%=h assignment.role__c %></td>
+    <td><%=h assignment.currently_assigned__c %></td>
+    <td><%=h assignment.status__c %></td>
+    <td><%= link_to 'Show', assignment %></td>
+    <td><%= link_to 'Edit', edit_salesforce_assignment_path(assignment) %></td>
+    <td><%= link_to 'Destroy', assignment, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New assignment', new_salesforce_assignment_path %>

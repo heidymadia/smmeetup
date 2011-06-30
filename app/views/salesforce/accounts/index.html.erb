@@ -8,14 +8,14 @@
     <th>Description</th>
   </tr>
 
-<% @accounts.each do |account| %>
+<% @salesforce_accounts.each do |account| %>
   <tr>
     <td><%=h account.name %></td>
     <td><%=h account.phone %></td>
     <td><%=h account.website %></td>
     <td><%=h account.description %></td>
     <td><%= link_to 'Show', account %></td>
-    <td><%= link_to 'Edit', edit_account_path(account) %></td>
+    <td><%= link_to 'Edit', edit_salesforce_account_path(account) %></td>
     <td><%= link_to 'Destroy', account, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
@@ -23,4 +23,4 @@
 
 <br />
 
-<%= link_to 'New account', new_account_path %>
+<%= link_to 'New account', new_salesforce_account_path %>

@@ -1,0 +1,40 @@
+<h1>Editing assignment</h1>
+
+<% form_for(@assignment) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :start_date__c %><br />
+    <%= f.date_select :start_date__c %>
+  </p>
+  <p>
+    <%= f.label :end_date__c %><br />
+    <%= f.date_select :end_date__c %>
+  </p>
+  <p>
+    <%= f.label :description__c %><br />
+    <%= f.text_area :description__c %>
+  </p>
+  <p>
+    <%= f.label :role__c %><br />
+    <%= f.text_field :role__c %>
+  </p>
+  <p>
+    <%= f.label :currently_assigned__c %><br />
+    <%= f.text_field :currently_assigned__c %>
+  </p>
+  <p>
+    <%= f.label :status__c %><br />
+    <%= f.text_field :status__c %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @assignment %> |
+<%= link_to 'Back', salesforce_assignments_path %>

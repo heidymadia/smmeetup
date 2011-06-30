@@ -1,0 +1,39 @@
+<h1>New project</h1>
+
+<% form_for(@project) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :start_date__c %><br />
+    <%= f.date_select :start_date__c %>
+  </p>
+  <p>
+    <%= f.label :end_date__c %><br />
+    <%= f.date_select :end_date__c %>
+  </p>
+  <p>
+    <%= f.label :billable_hours__c %><br />
+    <%= f.text_field :billable_hours__c %>
+  </p>
+  <p>
+    <%= f.label :consulting_budget__c %><br />
+    <%= f.text_field :consulting_budget__c %>
+  </p>
+  <p>
+    <%= f.label :expense_budget__c %><br />
+    <%= f.text_field :expense_budget__c %>
+  </p>
+  <p>
+    <%= f.label :location__c %><br />
+    <%= f.text_field :location__c %>
+  </p>
+  <p>
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', salesforce_projects_path %>

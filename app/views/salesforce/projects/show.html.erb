@@ -1,0 +1,38 @@
+<p>
+  <b>Start date  c:</b>
+  <%=h @project.start_date__c %>
+</p>
+
+<p>
+  <b>End date  c:</b>
+  <%=h @project.end_date__c %>
+</p>
+
+<p>
+  <b>Billable hours  c:</b>
+  <%=h @project.billable_hours__c %>
+</p>
+
+<p>
+  <b>Consulting budget  c:</b>
+  <%=h @project.consulting_budget__c %>
+</p>
+
+<p>
+  <b>Expense budget  c:</b>
+  <%=h @project.expense_budget__c %>
+</p>
+
+<p>
+  <b>Location  c:</b>
+  <%=h @project.location__c %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%=h @project.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_salesforce_project_path(@project) %> |
+<%= link_to 'Back', salesforce_projects_path %>

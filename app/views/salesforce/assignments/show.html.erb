@@ -1,0 +1,38 @@
+<p>
+  <b>Name:</b>
+  <%=h @assignment.name %>
+</p>
+
+<p>
+  <b>Start date  c:</b>
+  <%=h @assignment.start_date__c %>
+</p>
+
+<p>
+  <b>End date  c:</b>
+  <%=h @assignment.end_date__c %>
+</p>
+
+<p>
+  <b>Description  c:</b>
+  <%=h @assignment.description__c %>
+</p>
+
+<p>
+  <b>Role  c:</b>
+  <%=h @assignment.role__c %>
+</p>
+
+<p>
+  <b>Currently assigned  c:</b>
+  <%=h @assignment.currently_assigned__c %>
+</p>
+
+<p>
+  <b>Status  c:</b>
+  <%=h @assignment.status__c %>
+</p>
+
+
+<%= link_to 'Edit', edit_salesforce_assignment_path(@assignment) %> |
+<%= link_to 'Back', salesforce_assignments_path %>

@@ -1,0 +1,32 @@
+<h1>Listing projects</h1>
+
+<table>
+  <tr>
+    <th>Start date  c</th>
+    <th>End date  c</th>
+    <th>Billable hours  c</th>
+    <th>Consulting budget  c</th>
+    <th>Expense budget  c</th>
+    <th>Location  c</th>
+    <th>Notes</th>
+  </tr>
+
+<% @salesforce_projects.each do |project| %>
+  <tr>
+    <td><%=h project.start_date__c %></td>
+    <td><%=h project.end_date__c %></td>
+    <td><%=h project.billable_hours__c %></td>
+    <td><%=h project.consulting_budget__c %></td>
+    <td><%=h project.expense_budget__c %></td>
+    <td><%=h project.location__c %></td>
+    <td><%=h project.notes %></td>
+    <td><%= link_to 'Show', project %></td>
+    <td><%= link_to 'Edit', edit_salesforce_project_path(project) %></td>
+    <td><%= link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New project', new_salesforce_project_path %>

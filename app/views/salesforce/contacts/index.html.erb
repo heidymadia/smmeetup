@@ -8,14 +8,14 @@
     <th>Description</th>
   </tr>
 
-<% @contacts.each do |contact| %>
+<% @salesforce_contacts.each do |contact| %>
   <tr>
     <td><%=h contact.first_name %></td>
     <td><%=h contact.last_name %></td>
     <td><%=h contact.phone %></td>
     <td><%=h contact.description %></td>
     <td><%= link_to 'Show', contact %></td>
-    <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
+    <td><%= link_to 'Edit', edit_salesforce_contact_path(contact) %></td>
     <td><%= link_to 'Destroy', contact, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
@@ -23,4 +23,4 @@
 
 <br />
 
-<%= link_to 'New contact', new_contact_path %>
+<%= link_to 'New contact', new_salesforce_contact_path %>
